@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+.pd-10 {
+  padding: 10px 10px 10px 30px;
+}
+
+ul li {
+  list-style: none;
+  float: left;
+}
+
+ul li:hover {
+  /* background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); */
+  border-radius: 10px;
+  background: radial-gradient(red, yellow, green);
+}
+
+@keyframes mymove {
+  from {
+    color: #012340;
+  }
+  to {
+    padding: 15px;
+    border-radius: 20px;
+    transition: width 2s;
+  }
+}
+
+ul li a {
+  cursor: pointer;
+  text-transform: uppercase;
+  font: 700 24px/27px 'Poppins';
+  color: #012340;
+  animation: mymove 3s infinite;
+}
+
+ul li a:active {
+  color: green;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 10s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: transparent;
+  height: 100px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
